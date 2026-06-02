@@ -1,0 +1,149 @@
+/* --- 1. Global Reset & Theme Setup --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+}
+
+.logo {
+    height: 70px; /* adjust as needed */
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fcfbfa; /* Warm digital-magazine background */
+    color: #292929; /* Off-black for a softer, premium contrast */
+    line-height: 1.75; /* Perfect line spacing for easy reading */
+    padding: 40px 20px;
+}
+
+/* --- 2. Article Wrapper & Layout Control --- */
+.blog-post {
+    max-width: 1000px; /* Constrains the max size of the image container */
+    margin: 0 auto;
+}
+
+/* Constrain header and text content to an optimal reading line-length */
+.post-header, 
+.post-content {
+    max-width: 680px; 
+    margin: 0 auto;
+}
+
+/* --- 3. Header Styling --- */
+.post-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category-tag {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #8b5a2b; /* Subtle earthy accent color */
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.post-title {
+    font-size: 2.5rem; /* Dynamic sizing, big and bold */
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #6b6b6b;
+}
+
+.post-meta .divider {
+    margin: 0 8px;
+    color: #ccc;
+}
+
+/* --- 4. Featured Image Layout --- */
+.featured-image-wrapper {
+    margin: 40px auto;
+    width: 100%;
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 16px; /* Smooth modern borders */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Subtle depth */
+}
+
+/* --- 5. Content Typography --- */
+.post-content .lead-text {
+    font-size: 1.25rem; /* Larger introduction paragraph */
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.post-content h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+.post-content p {
+    font-size: 1.15rem; /* 18px-20px feel for modern readability */
+    margin-bottom: 24px;
+}
+
+/* --- 6. Modern Callout Container --- */
+.callout-box {
+    background-color: #f4efe9; /* Slightly darker warm tint */
+    border-left: 4px solid #8b5a2b; /* Matches your accent color */
+    padding: 20px 24px;
+    border-radius: 0 8px 8px 0;
+    margin: 32px 0;
+}
+
+.callout-box p {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+}
+
+/* --- 7. Mobile Adjustments --- */
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 2rem;
+    }
+    
+    body {
+        padding: 20px 15px;
+    }
+    
+    .featured-image-wrapper {
+        margin: 24px 0;
+    }
+}

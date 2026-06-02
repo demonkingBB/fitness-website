@@ -1,0 +1,80 @@
+
+
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    border-bottom: 3px solid #d4af37;
+}
+
+
+.logo {
+    height: 70px; /* adjust as needed */
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background: #f4f4f4;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.blog-img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-heading { 
+    font-style: italic;
+    font: Old English Text MT, serif;
+}
+
+/* FOOTER */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}

@@ -1,0 +1,202 @@
+/*Header*/
+
+    /*Logo*/
+
+    /*Site Title*/
+
+    /*Navigation Menu*/
+
+/*Body Content*/
+
+    /*Row 1*/
+
+        /*Left smaller box*/
+
+        /*Right larger box*/
+
+    /*Row 2*/
+
+        /*Left large box*/
+
+        /*Right smaller box*/
+
+    /*Embedded Video*/
+
+  /*Footer*/      
+
+  * {
+ 
+ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f4f4;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.main-home {
+  font-family: Arial, sans-serif;
+ 
+}
+
+
+/* HEADER */
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    border-bottom: 3px solid #d4af37;
+}
+
+.logo {
+    height: 70px; /* adjust as needed */
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.nav-links a:hover {
+  color: #d4af37;
+}
+
+h2 {
+  color: #b8860b;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.image {
+
+  width: auto;
+  height: 300px;
+}
+
+.img1 {
+  padding: 20px;
+  align-items: space-evenly;
+}
+
+.img2 {
+  padding: 20px;
+  align-items: space-evenly;
+}
+
+/* MAIN WRAPPER */
+.site-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+   background: rgba(202, 200, 200, 0.329)
+}
+
+
+/* ROWS (this is where most layout control happens) */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* BOX BASE STYLE (keep minimal so you can customize later) */
+
+.box {
+    border: none;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+
+/* ROW 1 LAYOUT */
+.box-small-left {
+  flex: 1;   /* smaller */
+  background: white;
+}
+
+.box-large-right {
+  flex: 2;   /* bigger */
+  background: white;
+}
+
+.quick-info {
+  display: flex;
+  gap: 20px;
+}
+
+.info-item {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 10px;
+  line-height: 1.6;
+
+}
+
+
+/* ROW 2 LAYOUT */
+.box-large-left {
+  flex: 2;
+  background: white;
+}
+
+.box-small-right {
+  flex: 1;
+  background: white;
+}
+
+
+/* BLOG CARD (clickable box feel) */
+.blog-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+
+/* VIDEO PLACEHOLDER */
+.video-placeholder {
+  border: 1px dashed #aaa;
+  height: 120px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* FOOTER */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}

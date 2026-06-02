@@ -29,11 +29,10 @@ body {
 }
 
 
-
 .contact-layout {
     display: grid;
-    grid-template-columns: 250px 1fr 250px;
-    gap: 2rem;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 1.5rem;
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem;
@@ -73,23 +72,16 @@ body {
   gap: 15px;
 }
 
+@media (max-width: 900px) {
 
-@media (max-width: 768px) {
-
-    .row {
-        flex-direction: column;
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .quick-info {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-    }
-
-    .logo {
-        height: 50px;
+    .sidebar {
+        text-align: center;
     }
 
 }
+

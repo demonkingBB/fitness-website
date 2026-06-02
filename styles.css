@@ -200,3 +200,25 @@ h2 {
   display: flex;
   gap: 15px;
 }
+
+/* MOBILE STYLES */
+
+@media (max-width: 768px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    .quick-info {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+}

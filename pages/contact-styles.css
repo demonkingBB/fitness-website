@@ -72,3 +72,24 @@ body {
   display: flex;
   gap: 15px;
 }
+
+
+@media (max-width: 768px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    .quick-info {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+}

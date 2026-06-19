@@ -177,11 +177,17 @@ h2 {
 
 /* VIDEO PLACEHOLDER */
 .video-placeholder {
-  min-height: 315px
   margin-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    max-width: 800px;  
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.video-placeholder iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
 }
 
 

@@ -177,8 +177,7 @@ h2 {
 
 /* VIDEO PLACEHOLDER */
 .video-placeholder {
-  border: 1px dashed #aaa;
-  height: 120px;
+  min-height: 315px
   margin-top: 10px;
   display: flex;
   align-items: center;
